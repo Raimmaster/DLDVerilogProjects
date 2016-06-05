@@ -1,0 +1,10 @@
+# Rojo (GPIO0)
+Net "RGB<0>" LOC="A10" | IOSTANDARD = LVCMOS33;
+# Verde (GPIO1)
+Net "RGB<1>" LOC="E11" | IOSTANDARD = LVCMOS33;
+# Azul (GPIO2)
+Net "RGB<2>" LOC="E10" | IOSTANDARD = LVCMOS33;
+# hsync (GPIO3)
+Net "hsync" LOC="D10" | IOSTANDARD = LVCMOS33;
+# vsync (GPIO4)
+Net "vsync" LOC="E9"  | IOSTANDARD = LVCMOS33;
