@@ -1,0 +1,149 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 5 -n
+3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf fpga_audio.ucf
+
+Design file:              Main.ncd
+Physical constraint file: Main.pcf
+Device,package,speed:     xc3s500e,ft256,-5 (PRODUCTION 1.27 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock do_nota to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+tono<0>     |    9.093(R)|temp              |   0.000|
+tono<1>     |    8.932(R)|temp              |   0.000|
+tono<2>     |    9.317(R)|temp              |   0.000|
+tono<3>     |    7.870(R)|temp              |   0.000|
+------------+------------+------------------+--------+
+
+Clock mi_nota to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+tono<0>     |   11.328(R)|temp              |   0.000|
+tono<1>     |   11.167(R)|temp              |   0.000|
+tono<2>     |   11.552(R)|temp              |   0.000|
+tono<3>     |   10.105(R)|temp              |   0.000|
+------------+------------+------------------+--------+
+
+Clock re_nota to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+tono<0>     |   11.499(R)|temp              |   0.000|
+tono<1>     |   11.338(R)|temp              |   0.000|
+tono<2>     |   11.723(R)|temp              |   0.000|
+tono<3>     |   10.276(R)|temp              |   0.000|
+------------+------------+------------------+--------+
+
+Clock sol_nota to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+tono<0>     |   10.911(R)|temp              |   0.000|
+tono<1>     |   10.750(R)|temp              |   0.000|
+tono<2>     |   11.135(R)|temp              |   0.000|
+tono<3>     |    9.688(R)|temp              |   0.000|
+------------+------------+------------------+--------+
+
+Clock to Setup on destination clock clk_audio
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk_audio      |    7.282|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock do_nota
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+do_nota        |    2.525|         |         |         |
+mi_nota        |    2.525|         |         |         |
+re_nota        |    2.525|         |         |         |
+sol_nota       |    2.525|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock mi_nota
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+do_nota        |    2.525|         |         |         |
+mi_nota        |    2.525|         |         |         |
+re_nota        |    2.525|         |         |         |
+sol_nota       |    2.525|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock re_nota
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+do_nota        |    2.525|         |         |         |
+mi_nota        |    2.525|         |         |         |
+re_nota        |    2.525|         |         |         |
+sol_nota       |    2.525|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock sol_nota
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+do_nota        |    2.525|         |         |         |
+mi_nota        |    2.525|         |         |         |
+re_nota        |    2.525|         |         |         |
+sol_nota       |    2.525|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Fri Jun 10 21:38:53 2016 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 119 MB
+
+
+
